@@ -1,3 +1,7 @@
+"""temp_convert.py: Converte uma lista de temperaturas inseridas pelo usuário de Celsius para Fahrenheit"""
+
+__author__  = "Álvaro"
+
 # Função de conversão de Celsius para Fahrenheit:
 def conv(T):
     return T * 1.8 + 32
@@ -14,7 +18,8 @@ print('\n====================================================\n'
 # Quantidade de teperaturas que serão inseridas pelo usuário
 qtde = int(input('Quantas temperaturas você deseja converter para Fahrenheit?\n'))
 
-# Enquanto o tamanho da lista de temperaturas em °C for menor que a quantidade inserida, o programa pedirá por uma nova temperatura
+# Enquanto o tamanho da lista de temperaturas em °C for menor que a 
+# quantidade inserida, o programa pedirá por uma nova temperatura
 i = 1
 while len(temp_c_list) < qtde:
     temp_c_list.append(float(input(f'\nInsira a {i}ª temperatura\n')))
@@ -23,7 +28,9 @@ while len(temp_c_list) < qtde:
 # Lista que receberá as temperaturas já convertidas para °F
 temp_f_list = []
 
-# Cada elemento na lista de temperaturas em °C, submetido à função map, que aplica a função de conversão nos mesmos, será agregado à lista de temperaturas em °F
+# Cada elemento na lista de temperaturas em °C, submetido à função map, 
+# que aplica a função de conversão nos mesmos, será agregado à lista de 
+# temperaturas em °F
 for i in map(conv, temp_c_list):
     temp_f_list.append(i)
 
