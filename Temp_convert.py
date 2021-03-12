@@ -11,9 +11,9 @@ try:
     temp_c_list = []
 
     # Apresentação do programa:
-    print('\n====================================================\n'
+    print('\n=====================================================\n'
             ' Conversor de temperaturas - Celsius para Fahrenheit\n'
-            '====================================================\n'
+            '=====================================================\n'
             )
 
     # Quantidade de teperaturas que serão inseridas pelo usuário
@@ -47,3 +47,5 @@ except ValueError:
     print('ERRO: São aceitos apenas números. Verifique os valores inseridos')
 except KeyboardInterrupt:
     print('\nExecução interrompida pelo usuário. Até a próxima.')
+finally:
+    print('Volte sempre!')
