@@ -2,8 +2,8 @@
 
 __author__  = "Álvaro"
 
-# Função de conversão de Celsius para Fahrenheit:
 def conv(T):
+"""Função de conversão de Celsius para Fahrenheit:"""
     return T * 1.8 + 32
 
 # Lista que receberá as temperaturas em °C:
