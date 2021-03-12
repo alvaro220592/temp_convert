@@ -36,8 +36,8 @@ for i in map(conv, temp_c_list):
 
 print('\nResultado:')
 
-'''
-Para cada índice e valor na lista de temperaturas em °F, serão mostradas, tanto as inseridas em °C pelo usuário, quanto as convertidas em °F. Obs: para a listagem das temperaturas em °C, em suas indexações foram usados os mesmos índices da lista de temperaturas em °F, pois os números são iguais
-'''
+# Para cada índice e valor na lista de temperaturas em °F, serão mostradas, # tanto as inseridas em °C pelo usuário, quanto as convertidas em °F. 
+# Obs: para a listagem das temperaturas em °C, em suas indexações foram 
+# usados os mesmos índices da lista de temperaturas em °F, pois os números são iguais
 for indice, valor in enumerate(temp_f_list):
     print(f'{indice + 1}ª temperatura: {temp_c_list[indice]}°C = {valor:.1f}°F')
